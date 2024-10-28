@@ -1,0 +1,294 @@
+/* 自定义导航栏颜色 */
+.navbar {
+    background-color: #0056b3 !important;
+}
+
+/* Hero section 样式调整 */
+.hero {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 自定义按钮样式 */
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* 确保标题和描述盒子的对齐 */
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 220px; /* 调整整体高度以适应最长的描述 */
+}
+
+/* 标题和描述盒子 */
+.title-box {
+    margin-bottom: 10px;
+}
+
+.description-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* 设置一致的高度 */
+    text-align: center;
+}
+
+/* Company Overview Section */
+.company-overview {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(-45deg, rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8), rgba(32, 114, 191, 0.8), rgba(16, 152, 173, 0.8));
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 粒子背景 */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.company-overview .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 渐变覆盖层（可选） */
+.company-overview .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 可调节透明度 */
+    z-index: 0;
+}
+.scroll-section {
+    padding: 60px 0;
+    border-bottom: 2px solid #e0e0e0; /* 灰色分界线 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 增加轻微阴影 */
+}
+
+/* 初始状态：元素透明并稍微偏移 */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* 当进入视口时显示 */
+.scroll-animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Company Overview Section */
+.company-overview {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #2072bf, #1098ad);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* 渐变动画效果 */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 粒子背景层 */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.company-overview .content {
+    position: relative;
+    z-index: 1;
+}
+
+/* 分界线样式 */
+.section-divider {
+    border: 0;
+    height: 2px;
+    background: #e0e0e0;
+    margin: 0; /* 去除默认的上下边距 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px; /* 可选：让地图的边角圆润 */
+    margin-top: 20px; /* 调整地图与上方内容的间距 */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Service Item 样式 */
+.service-item {
+    background: linear-gradient(145deg, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+    padding: 20px;
+    border-radius: 15px; /* 圆角边框 */
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 添加柔和的阴影 */
+    transition: transform 0.3s ease; /* 鼠标悬停时的动画 */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* 半透明的白色边框 */
+    overflow: hidden; /* 确保文字不会超出盒子 */
+    height: 100%; /* 让所有的服务项保持一致的高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 标题和文本样式 */
+.service-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2; /* 调整标题行高 */
+}
+
+.service-item p {
+    font-size: 0.95rem; /* 缩小文字以适应空间 */
+    line-height: 1.5;
+    margin-bottom: 0; /* 避免过多的底部边距 */
+}
+
+/* 鼠标悬停效果 */
+.service-item:hover {
+    transform: scale(1.05); /* 鼠标悬停时略微放大 */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* 使 Contact Us 标题居中并提升美观 */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+}
+
+/* 添加下划线作为装饰 */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff; /* 自定义颜色 */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* 居中对齐 Contact 信息 */
+#contact p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* 地图容器美化 */
+.map-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* 导入 Google 字体 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* 导航栏整体样式 */
+.navbar {
+    font-family: 'Poppins', sans-serif; /* 设置字体 */
+    font-size: 1rem; /* 设置字体大小 */
+    background-color: #0056b3; /* 导航栏背景颜色 */
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 添加阴影提升视觉效果 */
+}
+
+/* 导航栏 Logo 样式 */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600; /* 增加 Logo 的字体粗细 */
+    color: #ffffff;
+    text-transform: uppercase; /* Logo 全部大写 */
+    letter-spacing: 1px; /* 增加字符间距 */
+}
+
+/* 导航链接样式 */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #f8f9fa; /* 链接颜色 */
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease; /* 添加平滑的过渡效果 */
+}
+
+/* 鼠标悬停效果 */
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2); /* 添加半透明背景 */
+    border-radius: 5px;
+}
+
+/* 当前页面的激活链接样式 */
+.navbar-nav .nav-link.active {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #004085; /* 更深的背景色以突出显示 */
+    border-radius: 5px;
+}
